@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+    <extension point="org.eclipse.debug.core.launchConfigurationTypes">
+  		<launchConfigurationType
+			id="mav.composite.plugin.core"
+			delegate="mav.composite.plugin.core.CompositeLaunchConfigurationDelegate"
+			modes="run,debug"
+			name="%launchConfigurationType.name">
+		</launchConfigurationType>
+ 	</extension>
+</plugin>

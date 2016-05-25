@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+    <extension point="org.eclipse.debug.core.launchConfigurationTypes">
+  		<launchConfigurationType
+			id="mav.composite.plugin.core"
+			delegate="mav.composite.plugin.core.CompositeLaunchConfigurationDelegate"
+			modes="run,debug"
+			name="%launchConfigurationType.name">
+		</launchConfigurationType>
+ 	</extension>
+    <extension
+          point="org.eclipse.debug.ui.launchConfigurationTabGroups">
+       <launchConfigurationTabGroup
+             class="mav.composite.plugin.ui.CompositeLaunchConfigurationTabGroup"
+             id="mav.composite.plugin.ui.CompositeTabGroup"
+             type="mav.composite.plugin.core">
+       </launchConfigurationTabGroup>
+    </extension>
+    <extension
+          point="org.eclipse.debug.ui.launchConfigurationTypeImages">
+       <launchConfigurationTypeImage
+             configTypeID="mav.composite.plugin.core"
+             icon="icons/t.ico"
+             id="comp.launching.image">
+       </launchConfigurationTypeImage>
+    </extension>
+</plugin>
